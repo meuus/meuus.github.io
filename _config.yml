@@ -18,7 +18,7 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 locale                   : "ko-KO"
 title                    : "Meuus Page"
 title_separator          : "-"
-name                     : "Johann Koh"
+name                     : "Seong-Ryong Johann Koh"
 description              : "My GitHub Page."
 url                      : "https://meuus.github.io" # the base hostname & protocol for your site
 baseurl                  : # the subpath of your site, e.g. "/blog"
@@ -106,7 +106,7 @@ analytics:
 
 # Site Author
 author:
-  name             : "Johann Koh"
+  name             : "Seong-Ryong Johann Koh"
   avatar           : "/assets/images/bio_avatar.png"
   bio              : ""
   location         : "Aachen, Germany"
