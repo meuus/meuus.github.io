@@ -1,5 +1,5 @@
 ---
-title: "Performance Optimization and Production Audits"
+title: "Performance Optimization and Productivity Audits"
 tags:
   - hpc
   - scalasca
@@ -22,9 +22,17 @@ process management daemon.
 
 __Compile software:__ <font face="monospace">GCC/8.2.0</font>, <font face="monospace">ParaStationMPI/5.2.1-1</font>, <font face="monospace">parallel-netcdf/1.10.0</font>, <font face="monospace">FFTW/3.3.8</font>, <font face="monospace">CMake/3.13.0</font>
 
+```shell
+module load GCC/8.2.0 ParaStationMPI/5.2.1-1 pscom/5.2.9-1 parallel-netcdf/1.10.0 FFTW/3.3.8 CMake/3.13.0
+```
+
 __Analysis tools:__ <font face="monospace">Score-P/4.1</font>, <font face="monospace">Scalasca/2.4</font>, <font face="monospace">PAPI/5.6.0</font>, <font face="monospace">Vampir/9.5.0</font>, <font face="monospace">Extrae/3.6.1</font>, <font face="monospace">Paraver/4.8.1</font>
 
 __Note:__ <font face="monospace">Score-P</font> instrument with a runtime filtering collected the hardware counters <font face="monospace">PAPI_TOT_CYC</font>, <font face="monospace">PAPI_TOT_INS</font>, <font face="monospace">PAPI_RES_STL</font>.
+
+```shell
+export SCOREP_METRIC_PAPI=PAPI_TOT_INS,PAPI_TOT_CYC,PAPI_RES_STL
+```
 
 __Application name:__ _ZFS_ (Zonal Fluid Solver)
 
@@ -40,6 +48,7 @@ __Performance study:__ Overall performance of Lattice Boltzmann Method (LBM) mod
 
 
 ![A code profile instrumented by Score-P is presented by Cube](/assets/images/cube_zfs_1.png "Performance report presented by Cube")
+Performance metric - structure (call tree) - system resource analyzed by Scalasca
 
 
 ## Support activities
@@ -70,7 +79,7 @@ Solver) code which is developed by the Institute of Aerodynamics at the RWTH Aac
 ## Application structure
 
 ![Paraver timeline](/assets/images/paraver_zfs_1.png "Paraver timeline")
-Paraver timeline
+Paraver timeline for 24 MPI ranks with 4 threads
 
 ## Region of interest
 
