@@ -4,20 +4,23 @@ tags:
   - hpc
   - scalasca
   - score-p
-  - pop
+  - cube
   - zfs
 ---
 
-The Performance Optimisation and Productivity Centre of Excellence [POP CoE](https://pop-coe.eu/ "POP Webpage") in Computing Applications provides performance optimisation and productivity services for (your?) academic AND industrial code(s) in all domains! The first step to analyze an HPC application consists of following structures.
+The Performance Optimisation and Productivity Centre of Excellence [POP CoE](https://pop-coe.eu/ "POP Webpage") in Computing Applications provides performance optimisation and productivity services for academic and industrial code(s) in all domains. The first step to analyze an HPC application consists of following structures.
 
 ## Background
 
-__Test-case description:__ The Lattice Boltzmann Method (LBM) based on a BGK model is used to solve a computational domain generated with a local refinement method at the boundaries. The total number of cells is ca. 50 mil. The application performance is measured in 100 time steps on 2 node (48 MPI ranks per node) which yields a global workload imbalance 0.000983516%.
+__Test-case description:__ The Lattice Boltzmann Method (LBM) based on a BGK model is used to solve a computational domain generated with a local refinement method at the boundaries. The total number of cells is ca. 50 mil. The application performance is measured in 100 time steps on 2 node (48 cores per node) which yields a global workload imbalance 0.000983516%.
 
-__Machine description:__ <font face="monospace">JUWELS</font> consists of the 2271 standard and the 240 large-memory nodes
+__Machine description:__ 
+[JUWELS](http://www.fz-juelich.de/ias/jsc/EN/Expertise/Supercomputers/JUWELS/JUWELS_node.html "JUWELS")
+(Jülich Wizard for European Leadership Science)
+consists of the 2271 standard and the 240 large-memory nodes
 each of which possesses 48 cores of the <font face="monospace">Dual Intel Xeon Platinum 8168</font> processors. The
 application is running under the <font face="monospace">Slurm</font> (Simple Linux Utility for Resource Management) Workload
-Manager, a free open-source batch system. The resource on <font face="monospace">JUWELS</font> is managed by the ParaStation
+Manager, a free open-source batch system. The resource on JUWELS is managed by the ParaStation
 process management daemon.
 
 __Compile software:__ <font face="monospace">GCC/8.2.0</font>, <font face="monospace">ParaStationMPI/5.2.1-1</font>, <font face="monospace">parallel-netcdf/1.10.0</font>, <font face="monospace">FFTW/3.3.8</font>, <font face="monospace">CMake/3.13.0</font>
@@ -48,7 +51,7 @@ __Performance study:__ Overall performance of Lattice Boltzmann Method (LBM) mod
 
 
 ![A code profile instrumented by Score-P is presented by Cube](/assets/images/cube_zfs_1.png "Performance report presented by Cube")
-Performance metric - structure (call tree) - system resource analyzed by Scalasca
+Performance metric - structure (call tree) - system resource analyzed by [Scalasca](http://www.scalasca.org/ "Scalasca")
 
 
 ## Support activities
@@ -79,11 +82,15 @@ Solver) code which is developed by the Institute of Aerodynamics at the RWTH Aac
 ## Application structure
 
 ![Paraver timeline](/assets/images/paraver_zfs_1.png "Paraver timeline")
-Paraver timeline for 24 MPI ranks with 4 threads
+[Paraver](https://tools.bsc.es/paraver "Paraver") timeline for 24 MPI ranks with 4 threads
 
 ## Region of interest
 
 ## Scalability information
+
+![Strong scaling of _ZFS_](http://www.fz-juelich.de/ias/jsc/EN/Expertise/High-Q-Club/ZFS/scalingplot.png?__blob=poster)
+
+[Strong scaling of _ZFS_](http://www.fz-juelich.de/ias/jsc/EN/Expertise/High-Q-Club/ZFS/_node.html "ZFS on JUQUEEN")
 
 ## Application efficiency
 
