@@ -1,1 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-03-24T23:13:32+01:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Meuus Page</title><subtitle>My GitHub Page.</subtitle><author><name>Johann Koh</name></author><entry><title type="html">피정 자료</title><link href="http://localhost:4000/Jubilaeum-Retreat/" rel="alternate" type="text/html" title="피정 자료" /><published>2019-03-20T00:00:00+01:00</published><updated>2019-03-20T00:00:00+01:00</updated><id>http://localhost:4000/Jubilaeum-Retreat</id><content type="html" xml:base="http://localhost:4000/Jubilaeum-Retreat/">&lt;p&gt;&lt;a href=&quot;../presentation/kakoka50-20190412.html&quot;&gt;2019년 4월 12일-13일 피정자료&lt;/a&gt;&lt;/p&gt;</content><author><name>Johann Koh</name></author><summary type="html">2019년 4월 12일-13일 피정자료</summary></entry></feed>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-03-25T10:11:53+01:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Meuus Page</title><subtitle>My GitHub Page.</subtitle><author><name>Johann Koh</name></author><entry><title type="html">50주년 준비위원회 피정 자료</title><link href="http://localhost:4000/jubilaeum-retreat/" rel="alternate" type="text/html" title="50주년 준비위원회 피정 자료" /><published>2019-03-20T00:00:00+01:00</published><updated>2019-03-20T00:00:00+01:00</updated><id>http://localhost:4000/jubilaeum-retreat</id><content type="html" xml:base="http://localhost:4000/jubilaeum-retreat/">&lt;h2 id=&quot;준비위원회-첫번째-피정&quot;&gt;준비위원회 첫번째 피정&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;일시: 2019년 4월 12일 - 13일&lt;/li&gt;
+  &lt;li&gt;장소: Haus Venusberg&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;쾰른 한인 천주교회 설립 50주년을 맞이하는 2020년을 기념하기 위하여 지난 2018년
+준비위원회를 조직하였습니다. 그동안 진행해왔던 프로그램들과 함께 강연과 미사,
+그리고 일반 기념 사업에 대한 구체적인 의논이 진행될 첫 모임입니다.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;../presentation/kakoka50-20190412.html&quot;&gt;2019년 4월 12일-13일 피정자료&lt;/a&gt;&lt;/p&gt;</content><author><name>Johann Koh</name></author><category term="kakoka" /><category term="jubilaeum" /><category term="slides" /><summary type="html">준비위원회 첫번째 피정</summary></entry></feed>
