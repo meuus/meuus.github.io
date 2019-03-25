@@ -77,7 +77,7 @@ of hierarchic computer architectures, and performance optimization on computer n
 Furthermore, the simulation tools are incorporated to pursue the state-of-the-art technologies
 in the science and the engineering applications. In the present study a performance measurement and
 the code porting to the new software environment are presented for the _ZFS_ (Zonal Fluid
-Solver) code which is developed by the Institute of Aerodynamics at the RWTH Aachen University, Germany ([AIA](http://aia.rwth-aachen.de/)).
+Solver) code which is developed by the Institute of Aerodynamics at the RWTH Aachen University, Germany ([AIA](http://www.aia.rwth-aachen.de/)).
 
 ## Application structure
 
