@@ -81,11 +81,11 @@ The SimLab Highly Scalable Fluids & Solids Engineering ([SLFSE](https://www.jara
 ## Region of interest
 
 ## Scalability information
-Unfortunately in this training course we could not perform the full scale analysis. For the scalability analysis on the JUWELS the _ZFS_ needs a computing resources which would be provided in the next Optimization & Scaling Workshop. Nevertheless, in the former Scaling Workshop on JUQUEEN the DG (Discontinuous Galerkin method) module was scaled up to 28672 nodes as shown in this figure.
+Unfortunately in this training course we could not perform the full scale analysis. For the scalability analysis on the JUWELS the _ZFS_ needs a computing resources which would be provided in the next Optimization & Scaling Workshop. Nevertheless, in the former Scaling Workshop on [JUQUEEN](http://www.fz-juelich.de/ias/jsc/EN/Expertise/Supercomputers/JUQUEEN/JUQUEEN_node.html "JUQUEEN system") the DG (Discontinuous Galerkin method) module was scaled up to 28672 nodes as shown in this figure.
 
 ![Strong scaling of _ZFS_](http://www.fz-juelich.de/ias/jsc/EN/Expertise/High-Q-Club/ZFS/scalingplot.png?__blob=poster)
 
-[Strong scaling of _ZFS_](http://www.fz-juelich.de/ias/jsc/EN/Expertise/High-Q-Club/ZFS/_node.html "ZFS on JUQUEEN")
+The further information is available on the [_ZFS_ page](http://www.fz-juelich.de/ias/jsc/EN/Expertise/High-Q-Club/ZFS/_node.html "ZFS on JUQUEEN") of the [JSC High-Q club](http://www.fz-juelich.de/ias/jsc/EN/Expertise/High-Q-Club/_node.html "High-Q Club").
 
 ## Application efficiency
 
