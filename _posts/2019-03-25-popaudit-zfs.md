@@ -8,7 +8,7 @@ tags:
   - zfs
 ---
 
-The Performance Optimisation and Productivity Centre of Excellence [POP CoE](https://pop-coe.eu/ "POP Webpage") in Computing Applications provides performance optimisation and productivity services for academic and industrial code(s) in all domains. In the POP analysis training course on 18-21 Mar. 2019 at [JSC](http://www.fz-juelich.de/ias/jsc/EN/Home/home_node.html "Jülich Supercomputing Centre"), an HPC application was analyzed by [Scalasca](http://www.scalasca.org/ "Scalasca") as well as the [Paraver](https://tools.bsc.es/paraver "Paraver") workflow. We detail the HPC code in performance metric, scalability, and parallel efficiency via following structure.
+The Performance Optimisation and Productivity Centre of Excellence [POP CoE](https://pop-coe.eu/ "POP Webpage") in Computing Applications provides performance optimisation and productivity services for academic and industrial code(s) in all domains. In the POP analyst training on 18-21 Mar. 2019 at [JSC](http://www.fz-juelich.de/ias/jsc/EN/Home/home_node.html "Jülich Supercomputing Centre"), an HPC application was analyzed by [Scalasca](http://www.scalasca.org/ "Scalasca") as well as the [Paraver](https://tools.bsc.es/paraver "Paraver") workflow. We detail the HPC code in performance metric, scalability, and parallel efficiency via following structure.
 
 ## Background
 
@@ -81,7 +81,7 @@ The SimLab Highly Scalable Fluids & Solids Engineering ([SLFSE](https://www.jara
 ## Region of interest
 
 ## Scalability information
-Unfortunately in this training course we could not perform the full scale analysis. For the scalability analysis on the JUWELS the _ZFS_ needs a computing resources which would be provided in the next Optimization & Scaling Workshop. Nevertheless, in the former Scaling Workshop on [JUQUEEN](http://www.fz-juelich.de/ias/jsc/EN/Expertise/Supercomputers/JUQUEEN/JUQUEEN_node.html "JUQUEEN system") the DG (Discontinuous Galerkin method) module was scaled up to 28672 nodes as shown in this figure.
+Unfortunately in this training course we could not perform the full scale analysis. For the full scalability analysis on the JUWELS the _ZFS_ needs computer resources which would be provided in the next Optimization & Scaling Workshop. Nevertheless, in the former Scaling Workshop on [JUQUEEN](http://www.fz-juelich.de/ias/jsc/EN/Expertise/Supercomputers/JUQUEEN/JUQUEEN_node.html "JUQUEEN system") the DG (Discontinuous Galerkin method) module was scaled up to 28672 nodes as shown in this figure.
 
 ![Strong scaling of _ZFS_](http://www.fz-juelich.de/ias/jsc/EN/Expertise/High-Q-Club/ZFS/scalingplot.png?__blob=poster)
 
