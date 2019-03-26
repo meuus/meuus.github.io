@@ -8,7 +8,7 @@ tags:
   - zfs
 ---
 
-The Performance Optimisation and Productivity Centre of Excellence [POP CoE](https://pop-coe.eu/ "POP Webpage") in Computing Applications provides performance optimisation and productivity services for academic and industrial code(s) in all domains. The first step to analyze an HPC application consists of following structures.
+The Performance Optimisation and Productivity Centre of Excellence [POP CoE](https://pop-coe.eu/ "POP Webpage") in Computing Applications provides performance optimisation and productivity services for academic and industrial code(s) in all domains. In the POP analysis training course on 18-21 Mar. 2019 at [JSC](http://www.fz-juelich.de/ias/jsc/EN/Home/home_node.html "Jülich Supercomputing Centre"), an HPC application was analyzed by [Scalasca](http://www.scalasca.org/ "Scalasca") as well as the [Paraver](https://tools.bsc.es/paraver "Paraver") workflow. We detail the HPC code in performance metric, scalability, and parallel efficiency via following structure.
 
 ## Background
 
@@ -63,21 +63,15 @@ Gauss Centre for Supercomputing ([GCS](http://www.gauss-centre.eu)) successfully
 framework of the national HPC infrastructure. The main objective of this national project
 pursues the world class systems for science, economy, society, and politics. The results
 achieved in the detailed actions can be exploited and transferred to the national
-communities to increase the outreach to the general public.
-
-In the detailed actions, the user projects are supported by the efficient and the effective
+communities to increase the outreach to the general public. To realized these primary aims,
+the user projects are supported by the efficient and the effective
 methods which include the communication with the Jülich Supercomputing Centre ([JSC](http://www.fz-juelich.de/ias/jsc/EN/Home/home_node.html))
 supporting team, the technical consulting, and the national and the international cooperation.
 
-## Application code
-The SimLab Highly Scalable Fluids & Solids Engineering ([SLFSE](https://www.jara.org/en/fluids-solids-engineering)) aims at supporting users of the
-engineering sciences who have already developed parallel codes but need support for the use
-of massively parallel systems regarding high scalability, memory optimization, programming
-of hierarchic computer architectures, and performance optimization on computer nodes.
-Furthermore, the simulation tools are incorporated to pursue the state-of-the-art technologies
-in the science and the engineering applications. In the present study a performance measurement and
-the code porting to the new software environment are presented for the _ZFS_ (Zonal Fluid
-Solver) code which is developed by the Institute of Aerodynamics at the RWTH Aachen University, Germany ([AIA](http://www.aia.rwth-aachen.de/)).
+## Developer
+In this reporting a performance measurement is presented for the _ZFS_ (Zonal Fluid
+Solver) developed by the Institute of Aerodynamics at the RWTH Aachen University, Germany ([AIA](http://www.aia.rwth-aachen.de/)).
+The SimLab Highly Scalable Fluids & Solids Engineering ([SLFSE](https://www.jara.org/en/fluids-solids-engineering)) performs to support in the fields of engineering science the users experienced in massively parallel systems regarding high scalability, memory optimization, programming of hierarchic computer architectures, and performance optimization on computer nodes.
 
 ## Application structure
 
@@ -87,6 +81,7 @@ Solver) code which is developed by the Institute of Aerodynamics at the RWTH Aac
 ## Region of interest
 
 ## Scalability information
+Unfortunately in this training course we could not perform the full scale analysis. For the scalability analysis on the JUWELS the _ZFS_ needs a computing resources which would be provided in the next Optimization & Scaling Workshop. Nevertheless, in the former Scaling Workshop on JUQUEEN the DG (Discontinuous Galerkin method) module was scaled up to 28672 nodes as shown in this figure.
 
 ![Strong scaling of _ZFS_](http://www.fz-juelich.de/ias/jsc/EN/Expertise/High-Q-Club/ZFS/scalingplot.png?__blob=poster)
 

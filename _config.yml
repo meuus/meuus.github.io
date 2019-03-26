@@ -16,7 +16,7 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 
 # Site Settings
 locale                   : "ko-KO"
-title                    : "Meuus Page"
+title                    : "MEUUS Page"
 title_separator          : "-"
 name                     : "Seong-Ryong Johann Koh"
 description              : "My GitHub Page."
@@ -106,7 +106,7 @@ analytics:
 
 # Site Author
 author:
-  name             : "Seong-Ryong Johann Koh"
+  name             : "Johann Koh"
   avatar           : "/assets/images/bio_avatar.png"
   bio              : ""
   location         : "Aachen, Germany"
