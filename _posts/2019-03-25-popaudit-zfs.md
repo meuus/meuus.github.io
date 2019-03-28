@@ -97,6 +97,12 @@ The further information is available on the [_ZFS_ page](http://www.fz-juelich.d
 
 ## Application efficiency
 
+* Parallel efficiency 83%
+  - Load balance 84%
+  - Communication efficiency 98%
+    * Serialization efficiency 98%
+    * Transfer efficieny 100%
+
 ## Load balance
 
 Using the MPI+openMP setup we could achieve a load balance (Avg / Max) = 96.89%
