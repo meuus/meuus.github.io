@@ -50,7 +50,7 @@ __Input data:__ Amazing Fluid Dynamics
 __Performance study:__ Overall performance of Lattice Boltzmann Method (LBM) module and porting to GPU accelerator
 
 
-![A code profile instrumented by Score-P is presented by Cube](/assets/images/cube_zfs_1.png "Performance report presented by Cube")
+![A code profile instrumented by Score-P is presented by Cube](/assets/images/2019-03-25-fig-1.png "Performance report presented by Cube")
 Performance metric - structure (call tree) - system resource analyzed by [Scalasca](http://www.scalasca.org/ "Scalasca")
 
 
@@ -75,8 +75,16 @@ The SimLab Highly Scalable Fluids & Solids Engineering ([SLFSE](https://www.jara
 
 ## Application structure
 
-![Paraver timeline](/assets/images/paraver_zfs_1.png "Paraver timeline")
-[Paraver](https://tools.bsc.es/paraver "Paraver") timeline for 24 MPI ranks with 4 threads
+![Paraver timeline](/assets/images/2019-03-25-fig-2.png "Paraver timeline")
+This figure shows a [Paraver](https://tools.bsc.es/paraver "Paraver") timeline for 24 MPI ranks with 4 threads. The master threads has a little synchronization time in the initialization and the file IO at the beginning and the termination of the program. The OMP threads are ativated during the main iterations colored in blue.
+
+![Paraver timeline](/assets/images/2019-03-25-fig-3.png "Paraver timeline zoom")
+
+The timeline of two MPI ranks in ten iterations. Colors indicate the state at idle (black), running (blue),
+waiting a message (red), scheduling and fork/join (yellow), wait/wait all (crimson), and immediate send (pink).
+
+![Paraver timeline](/assets/images/2019-03-25-fig-4.png "Paraver timeline mpi")
+The timeline of MPI calls for two MPI ranks in ten iterations.
 
 ## Region of interest
 
@@ -90,6 +98,8 @@ The further information is available on the [_ZFS_ page](http://www.fz-juelich.d
 ## Application efficiency
 
 ## Load balance
+
+Using the MPI+openMP setup we could achieve a load balance (Avg / Max) = 96.89%
 
 ## Serial performance
 
