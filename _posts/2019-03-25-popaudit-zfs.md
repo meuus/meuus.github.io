@@ -49,11 +49,6 @@ __Input data:__ Amazing Fluid Dynamics
 
 __Performance study:__ Overall performance of Lattice Boltzmann Method (LBM) module and porting to GPU accelerator
 
-
-![A code profile instrumented by Score-P is presented by Cube](/assets/images/2019-03-25-fig-1.png "Performance report presented by Cube")
-Performance metric - structure (call tree) - system resource analyzed by [Scalasca](http://www.scalasca.org/ "Scalasca")
-
-
 ## Support activities
 Under the SiVeGCS project (SiVeGCS is an acronym for "Koordination und Sicherstellung der
 weiteren Verfügbarkeit der Supercomputing Ressourcen des GCS im Rahmen der nationalen
@@ -86,7 +81,7 @@ waiting a message (red), scheduling and fork/join (yellow), wait/wait all (crims
 ![Paraver timeline](/assets/images/2019-03-25-fig-4.png "Paraver timeline mpi")
 The timeline of MPI calls for two MPI ranks in ten iterations.
 
-## Region of interest
+## Focus of analysis
 
 ## Scalability information
 Unfortunately in this training course we could not perform the full scale analysis. For the full scalability analysis on the JUWELS the _ZFS_ needs computer resources which would be provided in the next Optimization & Scaling Workshop. Nevertheless, in the former Scaling Workshop on [JUQUEEN](http://www.fz-juelich.de/ias/jsc/EN/Expertise/Supercomputers/JUQUEEN/JUQUEEN_node.html "JUQUEEN system") the DG (Discontinuous Galerkin method) module was scaled up to 28672 nodes as shown in this figure.
@@ -97,18 +92,31 @@ The further information is available on the [_ZFS_ page](http://www.fz-juelich.d
 
 ## Application efficiency
 
-* Parallel efficiency 83%
-  - Load balance 84%
-  - Communication efficiency 98%
+The pure MPI setup achieves using a Score-P instrument the following scores.
+
+* Parallel efficiency (PE) 83%
+  - Load balance (LB) 84%
+  - Communication efficiency (COMM) 98%
     * Serialization efficiency 98%
     * Transfer efficieny 100%
 
+![A code profile instrumented by Score-P is presented by Cube](/assets/images/2019-03-25-fig-1.png "Performance report presented by Cube")
+Performance metric - structure (call tree) - system resource analyzed by [Scalasca](http://www.scalasca.org/ "Scalasca")
+
 ## Load balance
 
-Using the MPI+openMP setup we could achieve a load balance (Avg / Max) = 96.89%
+![Load balance 1](/assets/images/2019-03-25-fig-5.png "Load balance 1")
+A large disparity in the computation load occurs at the function call which calculates the boundary condition of no-slip wall. The local values at the boundary edges are updated at each time step for their physical conditions implemented by numerical schemes.
+
+![Load balance 2](/assets/images/2019-03-25-fig-6.png "Load balance 2")
+
+This figure illustrates that the computation of the main function accounts for ca. 40% of the computing time with a mean computing time 29.6s per MPI rank.
+
+<!--
 
 ## Serial performance
 
 ## Communications
 
 ## Summary and recommendations
+-->
