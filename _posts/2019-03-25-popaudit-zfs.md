@@ -1,6 +1,8 @@
 ---
-title: "Performance Optimization and Productivity Audits"
+title: "Performance Optimisation and Productivity Audits"
 tags:
+  - jsc
+  - juwels
   - hpc
   - scalasca
   - score-p
@@ -8,15 +10,14 @@ tags:
   - zfs
 ---
 
-The Performance Optimisation and Productivity Centre of Excellence [POP CoE](https://pop-coe.eu/ "POP Webpage") in Computing Applications provides performance optimisation and productivity services for academic and industrial code(s) in all domains. In the POP analyst training on 18-21 Mar. 2019 at [JSC](http://www.fz-juelich.de/ias/jsc/EN/Home/home_node.html "Jülich Supercomputing Centre"), an HPC application was analyzed by [Scalasca](http://www.scalasca.org/ "Scalasca") as well as the [Paraver](https://tools.bsc.es/paraver "Paraver") workflow. We detail the HPC code in performance metric, scalability, and parallel efficiency via following structure.
+The Performance Optimisation and Productivity Centre of Excellence [POP CoE](https://pop-coe.eu/ "POP Webpage") in Computing Applications provides performance optimisation and productivity services for academic and industrial code(s) in all domains. In the POP analyst training on 18-21 Mar. 2019 at [JSC (Jülich Supercomputing Centre)][jsc-link], an HPC application was analyzed by [Scalasca][scalasca] as well as [Paraver][paraver] workflow. We detail the HPC code in performance metric, scalability, and parallel efficiency via following structure.
 
 ## Background
 
 __Test-case description:__ The Lattice Boltzmann Method (LBM) based on a BGK model is used to solve a computational domain generated with a local refinement method at the boundaries. The total number of cells is ca. 50 mil. The application performance is measured in 100 time steps on 2 node (48 cores per node) which yields a global workload imbalance 0.000983516%.
 
 __Machine description:__ 
-[JUWELS](http://www.fz-juelich.de/ias/jsc/EN/Expertise/Supercomputers/JUWELS/JUWELS_node.html "JUWELS")
-(Jülich Wizard for European Leadership Science)
+[JUWELS][juwels] (Jülich Wizard for European Leadership Science)
 consists of the 2271 standard and the 240 large-memory nodes
 each of which possesses 48 cores of the <font face="monospace">Dual Intel Xeon Platinum 8168</font> processors. The
 application is running under the <font face="monospace">Slurm</font> (Simple Linux Utility for Resource Management) Workload
@@ -60,7 +61,7 @@ pursues the world class systems for science, economy, society, and politics. The
 achieved in the detailed actions can be exploited and transferred to the national
 communities to increase the outreach to the general public. To realized these primary aims,
 the user projects are supported by the efficient and the effective
-methods which include the communication with the Jülich Supercomputing Centre ([JSC](http://www.fz-juelich.de/ias/jsc/EN/Home/home_node.html))
+methods which include the communication with the Jülich Supercomputing Centre ([JSC][jsc-link])
 supporting team, the technical consulting, and the national and the international cooperation.
 
 ## Developer
@@ -70,8 +71,13 @@ The SimLab Highly Scalable Fluids & Solids Engineering ([SLFSE](https://www.jara
 
 ## Application structure
 
+![Vampir timeline](/assets/images/2019-03-25-fig-7.png "Vampir timeline")
+![Vampir timeline](/assets/images/2019-03-25-fig-8.png "Vampir timeline zoom")
+
+The trace result of [Scalasca][scalasca] analysis is illustrated for 24 MPI ranks with 4 threads using [Vampir][vampir].
+
 ![Paraver timeline](/assets/images/2019-03-25-fig-2.png "Paraver timeline")
-This figure shows a [Paraver](https://tools.bsc.es/paraver "Paraver") timeline for 24 MPI ranks with 4 threads. The master threads has a little synchronization time in the initialization and the file IO at the beginning and the termination of the program. The OMP threads are ativated during the main iterations colored in blue.
+This figure shows a [Paraver][paraver] timeline for the same simulation setup. The master threads has a little synchronization time in the initialization and the file IO at the beginning and the termination of the program. The OMP threads are ativated during the main iterations colored in blue.
 
 ![Paraver timeline](/assets/images/2019-03-25-fig-3.png "Paraver timeline zoom")
 
@@ -84,7 +90,7 @@ The timeline of MPI calls for two MPI ranks in ten iterations.
 ## Focus of analysis
 
 ## Scalability information
-Unfortunately in this training course we could not perform the full scale analysis. For the full scalability analysis on the JUWELS the _ZFS_ needs computer resources which would be provided in the next Optimization & Scaling Workshop. Nevertheless, in the former Scaling Workshop on [JUQUEEN](http://www.fz-juelich.de/ias/jsc/EN/Expertise/Supercomputers/JUQUEEN/JUQUEEN_node.html "JUQUEEN system") the DG (Discontinuous Galerkin method) module was scaled up to 28672 nodes as shown in this figure.
+Unfortunately in this training course we could not perform the full scale analysis. For the full scalability analysis on the JUWELS the _ZFS_ needs computer resources which would be provided in the next Optimization & Scaling Workshop. Nevertheless, in the former Scaling Workshop on [JUQUEEN][juqueen] the DG (Discontinuous Galerkin method) module was scaled up to 28672 nodes as shown in this figure.
 
 ![Strong scaling of _ZFS_](http://www.fz-juelich.de/ias/jsc/EN/Expertise/High-Q-Club/ZFS/scalingplot.png?__blob=poster)
 
@@ -92,16 +98,16 @@ The further information is available on the [_ZFS_ page](http://www.fz-juelich.d
 
 ## Application efficiency
 
-The pure MPI setup achieves using a Score-P instrument the following scores.
+![A code profile instrumented by Score-P is presented by Cube](/assets/images/2019-03-25-fig-1.png "Performance report presented by Cube")
+Performance metric - structure (call tree) - system resource analyzed by [Scalasca][scalasca]
 
-* Parallel efficiency (PE) 83%
-  - Load balance (LB) 84%
-  - Communication efficiency (COMM) 98%
+The pure MPI setup achieves using a Score-P instrument the following scores for the main functions selected in the call-tree.
+
+* Parallel efficiency 83%
+  - Load balance 84%
+  - Communication efficiency 98%
     * Serialization efficiency 98%
     * Transfer efficieny 100%
-
-![A code profile instrumented by Score-P is presented by Cube](/assets/images/2019-03-25-fig-1.png "Performance report presented by Cube")
-Performance metric - structure (call tree) - system resource analyzed by [Scalasca](http://www.scalasca.org/ "Scalasca")
 
 ## Load balance
 
@@ -120,3 +126,11 @@ This figure illustrates that the computation of the main function accounts for c
 
 ## Summary and recommendations
 -->
+
+[jsc-link]: http://www.fz-juelich.de/ias/jsc/EN/Home/home_node.html "Jülich Supercomputing Centre"
+[juwels]: http://www.fz-juelich.de/ias/jsc/EN/Expertise/Supercomputers/JUWELS/JUWELS_node.html "Jülich Wizard for European Leadership Science"
+[juqueen]: http://www.fz-juelich.de/ias/jsc/EN/Expertise/Supercomputers/JUQUEEN/JUQUEEN_node.html "JUQUEEN system"
+[scalasca]: http://www.scalasca.org/ "Scalasca"
+[vampir]: https://vampir.eu/ "Vampir"
+[paraver]: https://tools.bsc.es/paraver "Paraver"
+
