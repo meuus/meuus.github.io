@@ -2,11 +2,6 @@
 title: "Performance Optimisation and Productivity Audits"
 tags:
   - jsc
-  - juwels
-  - hpc
-  - scalasca
-  - score-p
-  - cube
   - zfs
 ---
 

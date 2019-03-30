@@ -2,9 +2,6 @@
 title: "50주년 준비위원회 피정 자료"
 tags:
   - kakoka
-  - jubilaeum
-  - slides
-  - retreat
 ---
 
 쾰른 한인 천주교회가 2020년에 공동체 설립 50주년을 맞이합니다.
