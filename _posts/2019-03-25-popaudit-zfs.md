@@ -3,6 +3,8 @@ title: "Performance Optimisation and Productivity Audits"
 tags:
   - jsc
   - zfs
+  - scalasca
+  - paraver
 ---
 
 The Performance Optimisation and Productivity Centre of Excellence [POP CoE](https://pop-coe.eu/ "POP Webpage") in Computing Applications provides performance optimisation and productivity services for academic and industrial code(s) in all domains. In the POP analyst training on 18-21 Mar. 2019 at [JSC (Jülich Supercomputing Centre)][jsc-link], an HPC application was analyzed by [Scalasca][scalasca] as well as [Paraver][paraver] workflow. We detail the HPC code in performance metric, scalability, and parallel efficiency via following structure.
@@ -72,6 +74,7 @@ The SimLab Highly Scalable Fluids & Solids Engineering ([SLFSE](https://www.jara
 The trace result of [Scalasca][scalasca] analysis is illustrated for 24 MPI ranks with 4 threads using [Vampir][vampir].
 
 ![Paraver timeline](/assets/images/2019-03-25-fig-2.png "Paraver timeline")
+
 This figure shows a [Paraver][paraver] timeline for the same simulation setup. The master threads has a little synchronization time in the initialization and the file IO at the beginning and the termination of the program. The OMP threads are ativated during the main iterations colored in blue.
 
 ![Paraver timeline](/assets/images/2019-03-25-fig-3.png "Paraver timeline zoom")
@@ -80,9 +83,15 @@ The timeline of two MPI ranks in ten iterations. Colors indicate the state at id
 waiting a message (red), scheduling and fork/join (yellow), wait/wait all (crimson), and immediate send (pink).
 
 ![Paraver timeline](/assets/images/2019-03-25-fig-4.png "Paraver timeline mpi")
+
 The timeline of MPI calls for two MPI ranks in ten iterations.
 
 ## Focus of analysis
+
+
+
+
+
 
 ## Scalability information
 Unfortunately in this training course we could not perform the full scale analysis. For the full scalability analysis on the JUWELS the _ZFS_ needs computer resources which would be provided in the next Optimization & Scaling Workshop. Nevertheless, in the former Scaling Workshop on [JUQUEEN][juqueen] the DG (Discontinuous Galerkin method) module was scaled up to 28672 nodes as shown in this figure.
@@ -94,6 +103,7 @@ The further information is available on the [_ZFS_ page](http://www.fz-juelich.d
 ## Application efficiency
 
 ![A code profile instrumented by Score-P is presented by Cube](/assets/images/2019-03-25-fig-1.png "Performance report presented by Cube")
+
 Performance metric - structure (call tree) - system resource analyzed by [Scalasca][scalasca]
 
 The pure MPI setup achieves using a Score-P instrument the following scores for the main functions selected in the call-tree.
@@ -107,6 +117,7 @@ The pure MPI setup achieves using a Score-P instrument the following scores for 
 ## Load balance
 
 ![Load balance 1](/assets/images/2019-03-25-fig-5.png "Load balance 1")
+
 A large disparity in the computation load occurs at the function call which calculates the boundary condition of no-slip wall. The local values at the boundary edges are updated at each time step for their physical conditions implemented by numerical schemes.
 
 ![Load balance 2](/assets/images/2019-03-25-fig-6.png "Load balance 2")
