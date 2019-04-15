@@ -17,6 +17,8 @@
 @import url(https://fonts.googleapis.com/css?family=Sunflower:500);
 @import url(https://fonts.googleapis.com/css?family=Nanum+Myeongjo:800);
 @import url(https://fonts.googleapis.com/css?family=Nanum+Gothic:400);
+@import url(http://fonts.googleapis.com/earlyaccess/kopubbatang.css);
+@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
 
 section.has-dark-background, section.has-dark-background h1, section.has-dark-background h2, section.has-dark-background h3, section.has-dark-background h4, section.has-dark-background h5, section.has-dark-background h6 {
   color: #fff; }
@@ -30,7 +32,8 @@ body {
   }
 
 .reveal {
-  font-family: "Nanum Gothic", "Source Sans Pro", Helvetica, sans-serif;
+  font-family: "Noto Sans KR", "Source Sans Pro", Helvetica, sans-serif;
+/* "KoPub Batang", "Nanum Gothic",  */
   font-size: 38px;
   font-weight: normal;
   color: #222; }
