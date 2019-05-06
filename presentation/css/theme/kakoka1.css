@@ -126,9 +126,11 @@ body {
   margin: 0 0 0 1em; }
 
 .reveal ol {
+  margin-bottom: 0.5em;
   list-style-type: decimal; }
 
 .reveal ul {
+  margin-bottom: 0.5em;
   list-style-type: disc; }
 
 .reveal ul ul {
