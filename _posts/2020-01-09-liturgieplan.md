@@ -26,12 +26,12 @@ tags:
 
 2020년 1월 12일 현재  
 
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;기도| (회)|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;기도| (회)|
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;기도| (회/단/대)|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;기도| (회/단/대)|
 |----------:|----------:|----------:|----------:|
 |미사참례|  102|성체조배|    94|
 |묵주기도| 1565|십자가의 길|  4|
-|화살기도|  162|촛불봉헌  | 89|
-|주모경|    399|9일 기도  |  0|
+|화살기도|  162|촛불봉헌|    89|
+|주모경|    399|9일 기도|     0|
 
 ## 봉사자의 기도 1
 
