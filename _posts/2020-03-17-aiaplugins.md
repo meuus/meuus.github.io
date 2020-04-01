@@ -6,9 +6,6 @@ tags:
   - zfs
 ---
 
-[jsc-link]: http://www.fz-juelich.de/ias/jsc/EN/Home/home_node.html "J&uuml;lich Supercomputing Centre"
-[juwelslink]: https://www.fz-juelich.de/ias/jsc/EN/Expertise/Supercomputers/JUWELS/JUWELS_node.html "J&uuml;lich Wizard for European Leadership Science"
-
 The ZFS uses a portable data format of the NetCDF. The coordinates of computational mesh,
 instantaneous data of field variables, and all the post-processing data are saved in runtime via parallel
 I/O functions defined in the ZFS modules. The parallel I/O modules are written in a pnetCDF regime.
@@ -17,6 +14,10 @@ Unfortunately the former pvplugins earlier than the revision 9xx are not compati
 ZFS release which has been refined for multi-scale multi-physics simulations.
 So far a variety of ZFS modules are under development for the new HPC systems,
 e.g., [JUWELS][juwelslink] at the [JSC][jsc-link].
+
+
+[jsc-link]: http://www.fz-juelich.de/ias/jsc/EN/Home/home_node.html "J&uuml;lich Supercomputing Centre"
+[juwelslink]: https://www.fz-juelich.de/ias/jsc/EN/Expertise/Supercomputers/JUWELS/JUWELS_node.html "J&uuml;lich Wizard for European Leadership Science"
 
 ## OpenMPI
 
