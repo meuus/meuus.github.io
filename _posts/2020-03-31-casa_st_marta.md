@@ -1,10 +1,10 @@
 ---
-title: "Gottesdienst - Casa Santa Marta"
+title: "Gottesdienst 31.03.2020 - Casa Santa Marta"
 tags:
   - catholic
 ---
 
-2020년 3월 31일 사순 5주간 화요일 카사 산타 마르타 미사: 교황 프란치스코 집전
+2020년 3월 31일 사순 5주간 화요일 카사 산타 마르타 아침 미사 강론
 
 미사 전 미사지향 공지
 
