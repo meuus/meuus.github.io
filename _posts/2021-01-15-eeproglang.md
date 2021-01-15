@@ -1,10 +1,7 @@
 ---
 title: "Energy Efficient Programming Language"
 tags:
-  - jsc
-  - zfs
-  - scalasca
-  - paraver
+  - hpc
 ---
 
 Recent developmet of information technologies leads us to drastic changes in our daily life in everywhere. Not only the eye-catching products based on AI (artificial intelligence) the supply chains over the world has been modernized in customer management, connection between manufacturers and consumers, and on-the-fly supplies tailored by clever systems. Behind the visible actions occuring in our demands the operation systems designed to show powerful functionality with low-energy usage are integrated in the apparatus or tools realizing the briliant ideas from industry and science.
