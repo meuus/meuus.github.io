@@ -1,10 +1,8 @@
 ---
 title: "Performance Optimisation and Productivity Audits"
 tags:
+  - hpc
   - jsc
-  - zfs
-  - scalasca
-  - paraver
 ---
 
 The Performance Optimisation and Productivity Centre of Excellence [POP CoE](https://pop-coe.eu/ "POP Webpage") in Computing Applications provides performance optimisation and productivity services for academic and industrial code(s) in all domains. In the POP analyst training on 18-21 Mar. 2019 at [JSC (Jülich Supercomputing Centre)][jsc-link], an HPC application was analyzed by [Scalasca][scalasca] as well as [Paraver][paraver] workflow. We detail the HPC code in performance metric, scalability, and parallel efficiency via following structure.

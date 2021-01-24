@@ -2,7 +2,6 @@
 title: "전례부 일정과 준비물"
 tags:
   - korea
-  - cursillo
   - catholic
 ---
 
