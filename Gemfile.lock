@@ -274,6 +274,7 @@ DEPENDENCIES
   github-pages
   jekyll (~> 3.9)
   jekyll-include-cache
+  kramdown (>= 2.3.0)
   minimal-mistakes-jekyll
 
 BUNDLED WITH
