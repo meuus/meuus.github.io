@@ -6,7 +6,7 @@ gem "jekyll-include-cache", group: :jekyll_plugins
 # gem "nokogiri", ">= 1.11.0.rc4"
 # gem "nokogiri", ">= 1.11.2"
 gem "jekyll", "~> 3.9"
-gem "kramdown", ">= 2.3.0"
+#gem "kramdown", ">= 2.3.1"
 
 # gem "jekyll-remote-theme"
 gem "minimal-mistakes-jekyll"
